@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "785739969007",
+    "firebase_url": "https://bscitcrack.firebaseio.com",
+    "project_id": "bscitcrack",
+    "storage_bucket": "bscitcrack.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785739969007:android:dac96f7be4333871",
+        "android_client_info": {
+          "package_name": "com.example.pc.bscitsyllabus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785739969007-eooef7f4evfj6oq0bv03ac5m17j9t5gh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pc.bscitsyllabus",
+            "certificate_hash": "11ce5be238ecf58285e23422330031a397596ede"
+          }
+        },
+        {
+          "client_id": "785739969007-sbhc0r3v7p3mboc83aiuulgegulttcj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5I5Gp-vElIASn4E3xiaJzIn3iZ-k4H80"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785739969007-sbhc0r3v7p3mboc83aiuulgegulttcj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

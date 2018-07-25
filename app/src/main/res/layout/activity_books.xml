@@ -1,0 +1,1290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context="com.example.pc.bscitsyllabus.Books">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar">
+        </include>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingLeft="10dp"
+        app:cardMaxElevation="15dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/dei"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/de" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/dei"
+                android:weightSum="1">
+
+
+
+                <ImageButton
+                    android:id="@+id/ded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="clip_horizontal"
+                    android:src="@drawable/ic_arrow_downward_black_24dp"
+                    android:background="@color/card"
+                    android:layout_weight="0.33"/>
+
+                <ImageButton
+                    android:id="@+id/deb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="clip_horizontal"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_comment_black_24dp"
+                    android:background="@color/card"
+                    android:layout_weight="0.33"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:text="DE" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/dedes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/subcard">
+
+        <TextView
+            android:id="@+id/det"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SUBJECT : Digital Electronics; TITLE : Modern Digital Electronics; Auther : R.P. Jain; PUBLISHER : TMH;  EDITION : 4th; SIZE : 50mb"
+            android:gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingLeft="10dp"
+        app:cardMaxElevation="15dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/dmi"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:srcCompat="@drawable/dm"
+                android:layout_marginTop="5dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/dmi"
+                android:weightSum="1">
+
+
+
+                <ImageButton
+                    android:id="@+id/dmd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="clip_horizontal"
+                    android:src="@drawable/ic_arrow_downward_black_24dp"
+                    android:background="@color/card"
+                    android:layout_weight="0.33"/>
+
+                <ImageButton
+                    android:id="@+id/dmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="clip_horizontal"
+                    android:src="@drawable/ic_comment_black_24dp"
+                    android:background="@color/card"
+                    android:layout_weight="0.33"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="DM"
+                    android:gravity="center"
+                    android:layout_weight="0.33"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/dmdes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/subcard">
+
+            <TextView
+                android:id="@+id/dmt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBJECT : Discrete Mathematics; TITLE : Discrete Mathematics with Applications; Auther : Sussana S. Epp; PUBLISHER : Cengage Learning;  EDITION : 4th; SIZE : 8mb"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingLeft="10dp"
+        app:cardMaxElevation="15dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ipi"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:srcCompat="@drawable/ip"
+                android:layout_marginTop="5dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ipi"
+                android:weightSum="1">
+
+
+
+                <ImageButton
+                    android:id="@+id/ipd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="clip_horizontal"
+                    android:src="@drawable/ic_arrow_downward_black_24dp"
+                    android:background="@color/card"
+                    android:layout_weight="0.33"/>
+
+                <ImageButton
+                    android:id="@+id/ipb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="clip_horizontal"
+                    android:src="@drawable/ic_comment_black_24dp"
+                    android:background="@color/card"
+                    android:layout_weight="0.33"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="IP"
+                    android:gravity="center"
+                    android:layout_weight="0.33"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ipdes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/subcard">
+
+            <TextView
+                android:id="@+id/ipt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBJECT : Imperative Programmimng; TITLE : Let us C; Auther : Yashwant P. Kanetkar; PUBLISHER : BPB;  EDITION : 5th; SIZE : 3.36mb"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingLeft="10dp"
+        app:cardMaxElevation="15dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/osi"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:srcCompat="@drawable/os"
+                android:layout_marginTop="5dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/osi"
+                android:weightSum="1">
+
+
+
+                <ImageButton
+                    android:id="@+id/osd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="clip_horizontal"
+                    android:src="@drawable/ic_arrow_downward_black_24dp"
+                    android:background="@color/card"
+                    android:layout_weight="0.33"/>
+
+                <ImageButton
+                    android:id="@+id/osb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="clip_horizontal"
+                    android:src="@drawable/ic_comment_black_24dp"
+                    android:background="@color/card"
+                    android:layout_weight="0.33"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="OS"
+                    android:gravity="center"
+                    android:layout_weight="0.33"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/osdes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/subcard">
+
+            <TextView
+                android:id="@+id/ost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBJECT : Operating Systems; TITLE : Modern Operating Systems; Auther : Andrew S.Tanenbaum,Herbert Bos; PUBLISHER : Pearson;  EDITION : 4th; SIZE : 4.5mb"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+<!--sem2  -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingLeft="10dp"
+        app:cardMaxElevation="15dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/gc1i"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:srcCompat="@drawable/gc1"
+                android:layout_marginTop="5dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/gc1i"
+                android:weightSum="1">
+
+
+
+                <ImageButton
+                    android:id="@+id/gc1d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="clip_horizontal"
+                    android:src="@drawable/ic_arrow_downward_black_24dp"
+                    android:background="@color/card"
+                    android:layout_weight="0.33"/>
+
+                <ImageButton
+                    android:id="@+id/gc1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="clip_horizontal"
+                    android:src="@drawable/ic_comment_black_24dp"
+                    android:background="@color/card"
+                    android:layout_weight="0.33"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="GC"
+                    android:gravity="center"
+                    android:layout_weight="0.33"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/gc1des"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/subcard">
+
+            <TextView
+                android:id="@+id/gc1t"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBJECT :Green Computing; TITLE : Green IT; Auther : Toby Velte,Anthony Velte,Robert Elsenpeter; PUBLISHER : TMH; SIZE : 8mb"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingLeft="10dp"
+        app:cardMaxElevation="15dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/gc2i"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:srcCompat="@drawable/gc2"
+                android:layout_marginTop="5dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/gc2i"
+                android:weightSum="1">
+
+
+
+                <ImageButton
+                    android:id="@+id/gc2d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="clip_horizontal"
+                    android:src="@drawable/ic_arrow_downward_black_24dp"
+                    android:background="@color/card"
+                    android:layout_weight="0.33"/>
+
+                <ImageButton
+                    android:id="@+id/gc2b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="clip_horizontal"
+                    android:src="@drawable/ic_comment_black_24dp"
+                    android:background="@color/card"
+                    android:layout_weight="0.33"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="GC"
+                    android:gravity="center"
+                    android:layout_weight="0.33"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/gc2des"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/subcard">
+
+            <TextView
+                android:id="@+id/gc2t"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBJECT : Green Computing; TITLE :Green Computing and Green IT Best Practice; Auther : Jason Harris; PUBLISHER : Emereo; SIZE : 1mb"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingLeft="10dp"
+        app:cardMaxElevation="15dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/oopi"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:srcCompat="@drawable/oop"
+                android:layout_marginTop="5dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/oopi"
+                android:weightSum="1">
+
+
+
+                <ImageButton
+                    android:id="@+id/oopd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="clip_horizontal"
+                    android:src="@drawable/ic_arrow_downward_black_24dp"
+                    android:background="@color/card"
+                    android:layout_weight="0.33"/>
+
+                <ImageButton
+                    android:id="@+id/oopb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="clip_horizontal"
+                    android:src="@drawable/ic_comment_black_24dp"
+                    android:background="@color/card"
+                    android:layout_weight="0.33"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="OOPs"
+                    android:gravity="center"
+                    android:layout_weight="0.33"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/oopdes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/subcard">
+
+            <TextView
+                android:id="@+id/oopt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBJECT : Object Oriented Programming; TITLE : Object Oriented Programming with C++; Auther : E. Balagurusamy; PUBLISHER : TMH;  EDITION : 4th; SIZE : 20mb"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingLeft="10dp"
+        app:cardMaxElevation="15dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/wdi"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:srcCompat="@drawable/wd"
+                android:layout_marginTop="5dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/wdi"
+                android:weightSum="1">
+
+
+
+                <ImageButton
+                    android:id="@+id/wdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="clip_horizontal"
+                    android:src="@drawable/ic_arrow_downward_black_24dp"
+                    android:background="@color/card"
+                    android:layout_weight="0.33"/>
+
+                <ImageButton
+                    android:id="@+id/wdb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="clip_horizontal"
+                    android:src="@drawable/ic_comment_black_24dp"
+                    android:background="@color/card"
+                    android:layout_weight="0.33"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="WD"
+                    android:gravity="center"
+                    android:layout_weight="0.33"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/wddes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/subcard">
+
+            <TextView
+                android:id="@+id/wdt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBJECT : Web Programming; TITLE : Web Design The Complete Reference; Auther : Thomas Powell; PUBLISHER : TMH; SIZE : 24mb"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+<!--sem3-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="15dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/card">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/nsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    app:srcCompat="@drawable/nsm"
+                    android:layout_marginTop="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/nsi"
+                    android:weightSum="1">
+
+
+
+                    <ImageButton
+                        android:id="@+id/nsd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="clip_horizontal"
+                        android:src="@drawable/ic_arrow_downward_black_24dp"
+                        android:background="@color/card"
+                        android:layout_weight="0.33"/>
+
+                    <ImageButton
+                        android:id="@+id/nsb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="clip_horizontal"
+                        android:src="@drawable/ic_comment_black_24dp"
+                        android:background="@color/card"
+                        android:layout_weight="0.33"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="NSM"
+                        android:gravity="center"
+                        android:layout_weight="0.33"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/nsdes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/subcard">
+
+            <TextView
+                android:id="@+id/nst"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBJECT : Numerical and Statistical Methods; TITLE : Introductory Methods of Numerical Methods; Auther : S. S. Shastri; PUBLISHER : PHI;  EDITION : 5th; SIZE : 3mb"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="15dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/card">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/cni"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    app:srcCompat="@drawable/cn"
+                    android:layout_marginTop="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/cni"
+                    android:weightSum="1">
+
+
+
+                    <ImageButton
+                        android:id="@+id/cnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="clip_horizontal"
+                        android:src="@drawable/ic_arrow_downward_black_24dp"
+                        android:background="@color/card"
+                        android:layout_weight="0.33"/>
+
+                    <ImageButton
+                        android:id="@+id/cnb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="clip_horizontal"
+                        android:src="@drawable/ic_comment_black_24dp"
+                        android:background="@color/card"
+                        android:layout_weight="0.33"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="CN"
+                        android:gravity="center"
+                        android:layout_weight="0.33"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cndes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/subcard">
+
+            <TextView
+                android:id="@+id/cnt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBJECT : Computer Networks; TITLE : Data Communication and Networking; Auther : Behrouz A. Forouzan; PUBLISHER : TMH;  EDITION : 4th; SIZE : 11mb"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="15dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/card">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ppi"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    app:srcCompat="@drawable/pp"
+                    android:layout_marginTop="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/ppi"
+                    android:weightSum="1">
+
+
+
+                    <ImageButton
+                        android:id="@+id/ppd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="clip_horizontal"
+                        android:src="@drawable/ic_arrow_downward_black_24dp"
+                        android:background="@color/card"
+                        android:layout_weight="0.33"/>
+
+                    <ImageButton
+                        android:id="@+id/ppb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="clip_horizontal"
+                        android:src="@drawable/ic_comment_black_24dp"
+                        android:background="@color/card"
+                        android:layout_weight="0.33"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="PP"
+                        android:gravity="center"
+                        android:layout_weight="0.33"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ppdes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/subcard">
+
+            <TextView
+                android:id="@+id/ppt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBJECT :Python Programming; TITLE : Think Python; Auther : Allen Downey; PUBLISHER : O’Reilly; SIZE : 7mb"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+<!-- sem4 -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="15dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/card">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/cgi"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    app:srcCompat="@drawable/cg"
+                    android:layout_marginTop="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/cgi"
+                    android:weightSum="1">
+
+
+
+                    <ImageButton
+                        android:id="@+id/cgd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="clip_horizontal"
+                        android:src="@drawable/ic_arrow_downward_black_24dp"
+                        android:background="@color/card"
+                        android:layout_weight="0.33"/>
+
+                    <ImageButton
+                        android:id="@+id/cgb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="clip_horizontal"
+                        android:src="@drawable/ic_comment_black_24dp"
+                        android:background="@color/card"
+                        android:layout_weight="0.33"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="CG"
+                        android:gravity="center"
+                        android:layout_weight="0.33"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cgdes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/subcard">
+
+            <TextView
+                android:id="@+id/cgt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBJECT : Computer Graphics and Animation; TITLE : Computer Graphics; Auther : Hearn, Baker; PUBLISHER : Pearson;  EDITION : 4th; SIZE : 24mb"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="15dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/card">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/esi"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    app:srcCompat="@drawable/es"
+                    android:layout_marginTop="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/esi"
+                    android:weightSum="1">
+
+
+
+                    <ImageButton
+                        android:id="@+id/esd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="clip_horizontal"
+                        android:src="@drawable/ic_arrow_downward_black_24dp"
+                        android:background="@color/card"
+                        android:layout_weight="0.33"/>
+
+                    <ImageButton
+                        android:id="@+id/esb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="clip_horizontal"
+                        android:src="@drawable/ic_comment_black_24dp"
+                        android:background="@color/card"
+                        android:layout_weight="0.33"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="ES"
+                        android:gravity="center"
+                        android:layout_weight="0.33"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/esdes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/subcard">
+
+            <TextView
+                android:id="@+id/est"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBJECT : Introduction to Embedded Systems; TITLE : Introduction to embedded systems; Auther : Shibu K V; PUBLISHER : TMH;  EDITION : 1th; SIZE : 36mb"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="15dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/card">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/cji"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    app:srcCompat="@drawable/cj"
+                    android:layout_marginTop="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/cji"
+                    android:weightSum="1">
+
+
+
+                    <ImageButton
+                        android:id="@+id/cjd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="clip_horizontal"
+                        android:src="@drawable/ic_arrow_downward_black_24dp"
+                        android:background="@color/card"
+                        android:layout_weight="0.33"/>
+
+                    <ImageButton
+                        android:id="@+id/cjb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="clip_horizontal"
+                        android:src="@drawable/ic_comment_black_24dp"
+                        android:background="@color/card"
+                        android:layout_weight="0.33"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="CJ"
+                        android:gravity="center"
+                        android:layout_weight="0.33"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cjdes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/subcard">
+
+            <TextView
+                android:id="@+id/cjt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBJECT : Core Java; TITLE : Java: The Complete Reference; Auther : Herbert Schildt; PUBLISHER : TMH;  EDITION : 9th; SIZE : 18mb"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="15dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/card">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/sei"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    app:srcCompat="@drawable/se"
+                    android:layout_marginTop="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/sei"
+                    android:weightSum="1">
+
+
+
+                    <ImageButton
+                        android:id="@+id/sed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="clip_horizontal"
+                        android:src="@drawable/ic_arrow_downward_black_24dp"
+                        android:background="@color/card"
+                        android:layout_weight="0.33"/>
+
+                    <ImageButton
+                        android:id="@+id/seb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="clip_horizontal"
+                        android:src="@drawable/ic_comment_black_24dp"
+                        android:background="@color/card"
+                        android:layout_weight="0.33"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="SE"
+                        android:gravity="center"
+                        android:layout_weight="0.33"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/sedes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/subcard">
+
+            <TextView
+                android:id="@+id/set"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBJECT : Software Engineering; TITLE : Software Engineering, edition,; Auther : Ian Somerville; PUBLISHER : Pearson;  EDITION : 9th; SIZE : 5mb"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

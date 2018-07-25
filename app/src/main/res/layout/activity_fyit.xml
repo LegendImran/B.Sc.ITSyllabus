@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.bscitsyllabus.MainActivity"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+    </include>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FYIT SYLLABUS"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="30dp"
+        android:textColor="@color/heading"/>
+
+    <Button
+        android:id="@+id/fys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FULL SYLLABUS"
+        android:layout_marginTop="10dp"
+        android:background="@color/btn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/btntext"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/ip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="SEM 1: Imperative programming"
+                android:layout_weight="1"
+                android:background="@color/btn"
+                android:textColor="@color/btntext"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                android:id="@+id/oops"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="SEM 2 : OOPS"
+                android:layout_weight="1"
+                android:background="@color/btn"
+                android:textColor="@color/btntext"
+                android:layout_marginLeft="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/de"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SEM 1: Digital electronics"
+                android:background="@color/btn"
+                android:textColor="@color/btntext"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/ma"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SEM 2 : microprocessor Architechture"
+                android:background="@color/btn"
+                android:textColor="@color/btntext"
+                android:layout_marginLeft="5dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/os"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SEM 1: Operating system"
+                android:background="@color/btn"
+                android:textColor="@color/btntext"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/wp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SEM 2 : web programming"
+                android:background="@color/btn"
+                android:textColor="@color/btntext"
+                android:layout_marginLeft="5dp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/dm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SEM 1: Discrete Mathematics"
+                android:background="@color/btn"
+                android:textColor="@color/btntext"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/nsm"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SEM 2 : numerical and statical method"
+                android:background="@color/btn"
+                android:textColor="@color/btntext"
+                android:layout_marginLeft="5dp"
+                android:paddingBottom="2dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/cs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SEM 1 : comminication skill"
+                android:background="@color/btn"
+                android:textColor="@color/btntext"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/gc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SEM 2 : green computing"
+                android:background="@color/btn"
+                android:textColor="@color/btntext"
+                android:layout_marginLeft="5dp"/>
+        </TableRow>
+    </TableLayout>
+<!--
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send PDF To Friends"
+                android:textColor="#C2A10200"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:padding="10dp"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/send"
+                android:text="send"
+                android:textColor="@color/btntext"
+                android:background="#A88A43AC"
+                android:layout_gravity="center"
+                android:padding="10dp"/>
+-->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

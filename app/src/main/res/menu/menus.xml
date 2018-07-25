@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<group
+    android:id="@+id/menu_top"
+    android:checkableBehavior="single">
+    <item
+        android:id="@+id/about"
+        android:title="About us"
+        android:icon="@drawable/ic_person_black_24dp"/>
+    <item
+        android:id="@+id/creator"
+        android:title="Creator"
+        android:icon="@drawable/ic_build_black_24dp"/>
+    <item
+        android:id="@+id/contact"
+        android:title="Contact us"
+        android:icon="@drawable/ic_email_black_24dp"/>
+</group>
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/reference"
+            android:title="Reference Books"
+            android:icon="@drawable/ic_import_contacts_black_24dp"/>
+
+       <item
+           android:id="@+id/practical"
+           android:title="Practical Solution"
+           android:icon="@drawable/ic_desktop_mac_black_24dp"/>
+
+    </group>
+</menu>
