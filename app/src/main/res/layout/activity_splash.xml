@@ -16,5 +16,6 @@
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_centerInParent="true"
-        app:srcCompat="@drawable/asim_new" />
+        app:srcCompat="@drawable/asim_new"
+        android:contentDescription="@string/logo_name" />
 </RelativeLayout>

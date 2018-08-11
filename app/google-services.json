@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "785739969007",
-    "firebase_url": "https://bscitcrack.firebaseio.com",
-    "project_id": "bscitcrack",
-    "storage_bucket": "bscitcrack.appspot.com"
+    "project_number": "1075699614390",
+    "firebase_url": "https://bscitsyllabus.firebaseio.com",
+    "project_id": "bscitsyllabus",
+    "storage_bucket": "bscitsyllabus.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:785739969007:android:dac96f7be4333871",
+        "mobilesdk_app_id": "1:1075699614390:android:dac96f7be4333871",
         "android_client_info": {
           "package_name": "com.example.pc.bscitsyllabus"
         }
       },
       "oauth_client": [
         {
-          "client_id": "785739969007-eooef7f4evfj6oq0bv03ac5m17j9t5gh.apps.googleusercontent.com",
+          "client_id": "1075699614390-v2dralarin9in5utul14cedkiarobeks.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.pc.bscitsyllabus",
@@ -23,13 +23,13 @@
           }
         },
         {
-          "client_id": "785739969007-sbhc0r3v7p3mboc83aiuulgegulttcj3.apps.googleusercontent.com",
+          "client_id": "1075699614390-9j9ccuh593vhggnaufkse4l9f1iqnact.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD5I5Gp-vElIASn4E3xiaJzIn3iZ-k4H80"
+          "current_key": "AIzaSyC-1caA3uxFW4Y-H0ZC5ZrLcZT5TO9hNmk"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "785739969007-sbhc0r3v7p3mboc83aiuulgegulttcj3.apps.googleusercontent.com",
+              "client_id": "1075699614390-9j9ccuh593vhggnaufkse4l9f1iqnact.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

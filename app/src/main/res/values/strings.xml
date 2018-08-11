@@ -4,4 +4,6 @@
     <string name="close">Close</string>
     <string name="site">khanimran.in</string>
     <string name="title_activity_reference">Reference</string>
+    <string name="logo_name">ASIM LOGO</string>
+    <string name="textview">TextView</string>
 </resources>
